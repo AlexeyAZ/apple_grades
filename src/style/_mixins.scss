@@ -1,0 +1,8 @@
+@mixin media($media) {
+
+	@if $media == w1366 {
+		@media screen and (max-width: 1366px) { @content; }
+	} @else if $media == w768 {
+		@media screen and (max-width: 768px) { @content; }
+	}
+}
